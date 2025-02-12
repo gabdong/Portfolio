@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import styled from 'styled-components';
 
-function App() {
-  const [count, setCount] = useState(0)
+import About from '@pages/About';
+import Experience from '@pages/experience/Experience';
+import Nav from '@components/Nav/Nav';
+
+export default function App() {
+  console.log('---------- App rendering ----------');
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <WrapperSt id="wrapper">
+      <BrowserRouter>
+        <Nav />
+        <MainSt>
+          <Routes>
+            <Route path="/" element={<Experience />}></Route>
+            <Route path="/experience" element={<Experience />}></Route>
+            <Route path="/about" element={<About />}></Route>
+          </Routes>
+        </MainSt>
+      </BrowserRouter>
+    </WrapperSt>
+  );
 }
 
-export default App
+const WrapperSt = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+const MainSt = styled.main`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`;
