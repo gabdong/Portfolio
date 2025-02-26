@@ -2442,7 +2442,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   }
 `;function b0(){const[i,o]=C.useState(!1),s=Gt(),{pathname:d}=s;return u.jsxs(H0,{id:"nav",children:[u.jsx(R0,{menuOn:i,setMenuOn:o,pathname:d}),u.jsx(A0,{menuOn:i,setMenuOn:o,pathname:d})]})}const H0=ye.nav`
   overflow: hidden;
-`;function V0(){return console.log("---------- App rendering ----------"),console.log("/Portfolio/"),u.jsx(Q0,{id:"wrapper",children:u.jsxs(eg,{basename:"/Portfolio/",children:[u.jsx(b0,{}),u.jsx(Y0,{children:u.jsxs(Rm,{children:[u.jsx(_l,{path:"/",element:u.jsx(Vd,{})}),u.jsx(_l,{path:"/experience",element:u.jsx(Vd,{})}),u.jsx(_l,{path:"/about",element:u.jsx(d0,{})})]})})]})})}const Q0=ye.div`
+`;function V0(){return console.log("---------- App renderin2 ----------"),console.log("/Portfolio/"),u.jsx(Q0,{id:"wrapper",children:u.jsxs(eg,{basename:"/Portfolio/",children:[u.jsx(b0,{}),u.jsx(Y0,{children:u.jsxs(Rm,{children:[u.jsx(_l,{path:"/",element:u.jsx(Vd,{})}),u.jsx(_l,{path:"/experience",element:u.jsx(Vd,{})}),u.jsx(_l,{path:"/about",element:u.jsx(d0,{})})]})})]})})}const Q0=ye.div`
   width: 100%;
   height: 100%;
 `,Y0=ye.main`
