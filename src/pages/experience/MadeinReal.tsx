@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 
 import { setHeaderVisibility } from '@lib/utils';
@@ -7,14 +7,12 @@ import media from '@lib/mediaQueries';
 import ScrollActiveEl from '@components/ScrollActiveEl';
 
 export default function Madeinreal() {
-  const wrapperRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
     setHeaderVisibility(false);
   }, []);
 
   return (
-    <WrapperSt className="scroll" ref={wrapperRef}>
+    <WrapperSt className="scroll">
       <h2 className="blind">메이드인리얼 작업내용</h2>
 
       <div className="con1 con">
@@ -29,16 +27,16 @@ export default function Madeinreal() {
       <div className="con2 con">
         <div className="container">
           <ScrollActiveEl className="fadeIn">
-            <span className="headline">Automated</span>
+            <span className="titleXL">Automated</span>
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
-            <span className="headline">Medical</span>
+            <span className="titleXL">Medical</span>
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
-            <span className="headline">Web Business</span>
+            <span className="titleXL">Web Business</span>
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
-            <span className="headline">Platform.</span>
+            <span className="titleXL">Platform.</span>
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
             <span className="normalText">
@@ -69,7 +67,7 @@ export default function Madeinreal() {
           </ScrollActiveEl>
         </div>
         <div className="container">
-          <span className="headline">누구나 전문가처럼 페이지를 제작</span>
+          <span className="titleL">누구나 전문가처럼 페이지를 제작</span>
           <span className="normalText">
             비전문가도 전문가 수준으로 병/의원 웹페이지를 구축하고
           </span>
@@ -97,13 +95,22 @@ export default function Madeinreal() {
         </div>
         <div className="backgroundWrap">
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_half_circle.png" />
+            <img
+              src="/public/images/mir/background_half_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_half_circle.png" />
+            <img
+              src="/public/images/mir/background_half_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_half_circle.png" />
+            <img
+              src="/public/images/mir/background_half_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
         </div>
       </div>
@@ -111,21 +118,33 @@ export default function Madeinreal() {
       <div className="con6 con">
         <div className="backgroundWrap">
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_circle.png" />
+            <img
+              src="/public/images/mir/background_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_circle.png" />
+            <img
+              src="/public/images/mir/background_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_circle.png" />
+            <img
+              src="/public/images/mir/background_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <img src="/public/images/mir/background_circle.png" />
+            <img
+              src="/public/images/mir/background_circle.png"
+              alt="배경 원형 꾸밈요소"
+            />
           </ScrollActiveEl>
         </div>
 
         <div className="container">
-          <span className="headline">페이지 관리 시스템</span>
+          <span className="title">페이지 관리 시스템</span>
           <span className="caption">
             * UI 및 기본 스킨 제공으로 비전문가도 코딩없이 간편하게
             <br /> 웹페이지를 구축 할 수 있도록 지원하는 서비스
@@ -134,14 +153,17 @@ export default function Madeinreal() {
 
         <div className="container">
           <span className="subTitle">페이지 제작 기능</span>
-          <img src="/public/images/mir/builder_main.png" />
+          <img
+            src="/public/images/mir/builder_main.png"
+            alt="페이지 빌더 이미지"
+          />
           <ul className="infoUl">
             <li>
               <span>
                 <em>▶︎</em> 텍스트 및 이미지를 간편하게 교체할 수 있는 기능 제공
               </span>
               <span>* 페이지요소 스타일 수정 UI</span>
-              <span>* JSON 형태로 구조저장 및 출력</span>
+              <span>* JSON으로 구조, 스타일정보 저장 및 출력</span>
             </li>
             <li>
               <span>
@@ -168,7 +190,10 @@ export default function Madeinreal() {
 
         <div className="container">
           <span className="subTitle">팝업 관리 기능</span>
-          <img src="/public/images/mir/builder_popup.png" />
+          <img
+            src="/public/images/mir/builder_popup.png"
+            alt="팝업 관리 기능 이미지"
+          />
           <ul className="infoUl">
             <li>
               <span>
@@ -189,7 +214,10 @@ export default function Madeinreal() {
 
         <div className="container">
           <span className="subTitle">상담 및 진료 예약시스템 개선</span>
-          <img src="/public/images/mir/builder_reserve.png" />
+          <img
+            src="/public/images/mir/builder_reserve.png"
+            alt="예약 페이지 이미지"
+          />
           <ul className="infoUl">
             <li>
               <span>
@@ -204,7 +232,7 @@ export default function Madeinreal() {
 
       <div className="con7 con">
         <div className="container">
-          <span className="headline">장비 & 상품 관리</span>
+          <span className="title">장비 & 상품 관리</span>
           <span className="caption">
             * 병원 내 보유 장비 및 상품을 관리 할 수 있는 서비스
           </span>
@@ -212,11 +240,17 @@ export default function Madeinreal() {
         <div className="deviceImgWrap">
           <div className="deviceImgContainer">
             <ScrollActiveEl className="cover coverChange" />
-            <img src="/public/images/mir/device_placeholder.png" />
-            <img src="/public/images/mir/device_01.png" />
-            <img src="/public/images/mir/device_02.png" />
-            <img src="/public/images/mir/device_03.png" />
-            <img src="/public/images/mir/device_placeholder.png" />
+            <img
+              src="/public/images/mir/device_placeholder.png"
+              alt="장비, 상품관리 빈칸이미지"
+            />
+            <img src="/public/images/mir/device_01.png" alt="의료장비 이미지" />
+            <img src="/public/images/mir/device_02.png" alt="의료장비 이미지" />
+            <img src="/public/images/mir/device_03.png" alt="의료장비 이미지" />
+            <img
+              src="/public/images/mir/device_placeholder.png"
+              alt="장비, 상품관리 빈칸이미지"
+            />
           </div>
         </div>
         <div className="container">
@@ -251,14 +285,17 @@ export default function Madeinreal() {
 
       <div className="con8 con">
         <div className="container">
-          <span className="headline">CRM 및 협업툴</span>
+          <span className="title">CRM 및 협업툴</span>
           <span className="caption">
             * 업무 효율 극대화를 위한 CRM 및 부서간 협업 시스템
           </span>
         </div>
         <div className="imageAnimationWrap right">
           <ScrollActiveEl className="imageAnimation">
-            <img src="/public/images/mir/crm_service.png" />
+            <img
+              src="/public/images/mir/crm_service.png"
+              alt="crm 관련 이미지"
+            />
           </ScrollActiveEl>
         </div>
         <div className="container">
@@ -286,7 +323,10 @@ export default function Madeinreal() {
         </div>
         <div className="imageAnimationWrap left">
           <ScrollActiveEl className="imageAnimation">
-            <img src="/public/images/mir/works_service.png" />
+            <img
+              src="/public/images/mir/works_service.png"
+              alt="협업툴 관련이미지"
+            />
           </ScrollActiveEl>
         </div>
       </div>
@@ -326,12 +366,6 @@ const WrapperSt = styled.section`
 
     position: relative;
     z-index: 1;
-
-    .headline {
-      font-size: 42px;
-      font-weight: 700;
-      color: #fff;
-    }
 
     .caption {
       font-size: 16px;
@@ -387,57 +421,6 @@ const WrapperSt = styled.section`
     }
   }
 
-  .backgroundWrap,
-  .cover {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .cover {
-    z-index: 1;
-  }
-
-  .coverChange {
-    background: rgba(23, 23, 23, 0.9);
-    transition: background 0.3s ease-in-out 0.3s;
-
-    &.active {
-      background: linear-gradient(
-        to right,
-        var(--dark-m) 0%,
-        rgba(23, 23, 23, 0.6) 10%,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(23, 23, 23, 0.6) 90%,
-        var(--dark-m) 100%
-      );
-    }
-  }
-
-  .fadeIn {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-
-    &.active {
-      opacity: 1;
-    }
-  }
-
-  .fadeUp {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
-
-    &.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   .con1 {
     background: black;
 
@@ -463,22 +446,18 @@ const WrapperSt = styled.section`
       &:nth-child(2) {
         transition-delay: 0.2s;
       }
+
       &:nth-child(3) {
         transition-delay: 0.4s;
       }
+
       &:nth-child(4) {
         transition-delay: 0.6s;
       }
+
       &:nth-child(5) {
         transition-delay: 0.8s;
       }
-      &.active {
-        opacity: 1;
-      }
-    }
-
-    .headline {
-      font-size: 62px;
     }
 
     .normalText {
@@ -531,12 +510,6 @@ const WrapperSt = styled.section`
     .container {
       margin-top: 30px;
       text-align: center;
-
-      .headline {
-        font-size: 42px;
-        font-weight: 700;
-        color: #fff;
-      }
 
       .normalText {
         display: block;
@@ -782,10 +755,6 @@ const WrapperSt = styled.section`
     }
 
     .container {
-      .headline {
-        font-size: 38px;
-      }
-
       .caption {
         font-size: 14px;
       }
@@ -839,10 +808,6 @@ const WrapperSt = styled.section`
         gap: 12px;
       }
 
-      .headline {
-        font-size: 52px;
-      }
-
       .normalText {
         font-size: 16px;
       }
@@ -861,10 +826,6 @@ const WrapperSt = styled.section`
 
       .container {
         margin-top: 20px;
-
-        .headline {
-          font-size: 52px;
-        }
 
         .normalText {
           font-size: 16px;
@@ -921,10 +882,6 @@ const WrapperSt = styled.section`
     }
 
     .container {
-      .headline {
-        font-size: 28px;
-      }
-
       .caption {
         font-size: 12px;
       }
@@ -964,21 +921,10 @@ const WrapperSt = styled.section`
     }
 
     .fadeUp {
-      opacity: 0;
       transform: translateY(40px);
-      transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
-
-      &.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     .con2 {
-      .headline {
-        font-size: 32px;
-      }
-      
       .normalText {
         font-size: 14px;
       }
@@ -1001,14 +947,8 @@ const WrapperSt = styled.section`
       }
 
       .container {
-        .headline {
-          font-size: 32px;
-          word-break: keep-all;
-        }
-
         .normalText {
           font-size: 14px;
-          word-break: keep-all;
         }
       }
     }

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import media from '@lib/mediaQueries';
+
 export default function NavBtn({ menuOn, setMenuOn }: HeaderProps) {
   /**
    * - Nav 버튼 클릭시 메뉴창 display, nav button 모양 조절
@@ -80,6 +82,11 @@ const NavBtnSt = styled.button`
       transform: rotate(225deg);
     }
   }
+
+  ${media.small`
+    width: 28px;
+    height: 28px;
+  `}
 `;
 const NavButtonAnimationContainerSt = styled.div`
   width: 100%;

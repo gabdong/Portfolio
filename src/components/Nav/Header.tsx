@@ -4,6 +4,7 @@ import MaxWidthContainer from '@components/MaxWidthContainer';
 import NavBtn from '@components/Nav/NavBtn';
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import media from '@lib/mediaQueries';
 
 export default function Header({ menuOn, setMenuOn, pathname }: HeaderProps) {
   const pageTitleRef = useRef<HTMLHeadingElement>(null);
@@ -81,6 +82,10 @@ const LogoSt = styled.div`
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 1.5s linear infinite;
+
+  ${media.small`
+    font-size: 16px;
+  `}
 `;
 const CurrentPageTitleSt = styled.h2`
   font-size: 18px;
@@ -96,4 +101,8 @@ const CurrentPageTitleSt = styled.h2`
   &.on {
     opacity: 1;
   }
+
+  ${media.small`
+    font-size: 16px;
+  `}
 `;

@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import media from '@lib/mediaQueries';
+
 export default function MenuTextLi({
   setMenuOn,
   path,
@@ -91,4 +93,8 @@ const MenuTextSt = styled.span`
   transition: transform 0.3s ease-in-out;
 
   transform: translateY(100%);
+
+  ${media.small`
+    font-size: 42px;
+  `}
 `;

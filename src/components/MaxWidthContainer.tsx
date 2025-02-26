@@ -1,13 +1,19 @@
+import media from '@lib/mediaQueries';
+import { buildClassName } from '@lib/utils';
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
 export default function MaxWidthContainer({
   children,
   style,
-}: PropsWithChildren<{ style?: { [key: string]: string | number } }>) {
+  className,
+}: PropsWithChildren<{
+  style?: { [key: string]: string | number };
+  className?: string;
+}>) {
   return (
     <MaxWidthContainerSt
-      className="maxWidthContainer"
+      className={buildClassName(['maxWidthContainer', className])}
       style={style ? { ...style } : undefined}
     >
       {children}
@@ -22,4 +28,8 @@ const MaxWidthContainerSt = styled.div`
   margin: 0 auto;
 
   position: relative;
+
+  ${media.medium`
+    max-width: 90%;
+  `}
 `;
