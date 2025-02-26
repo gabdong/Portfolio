@@ -8,9 +8,10 @@ import Nav from '@components/Nav/Nav';
 export default function App() {
   console.log('---------- App rendering ----------');
 
+  console.log(import.meta.env.BASE_URL);
   return (
     <WrapperSt id="wrapper">
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Nav />
         <MainSt>
           <Routes>
