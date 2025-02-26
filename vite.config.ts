@@ -6,4 +6,5 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tsconfigPaths()],
   base: mode === 'development' ? '/' : '/Portfolio/',
+  publicDir: 'public',
 }));
