@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 
-import About from '@pages/About';
+import Contact from '@pages/Contact';
 import Experience from '@pages/experience/Experience';
 import Nav from '@components/Nav/Nav';
 
@@ -17,7 +17,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Experience />}></Route>
             <Route path="/experience" element={<Experience />}></Route>
-            <Route path="/about" element={<About />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
           </Routes>
         </MainSt>
       </BrowserRouter>

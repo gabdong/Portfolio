@@ -47,8 +47,8 @@ export default function Menu({ menuOn, setMenuOn, pathname }: HeaderProps) {
             />
             <MenuTextLi
               setMenuOn={setMenuOn}
-              path="about"
-              text="About"
+              path="contact"
+              text="Contact"
               currentPath={pathname as string}
             />
           </MenuTextUlSt>

@@ -8,7 +8,7 @@ import media from '@lib/mediaQueries';
 
 export default function Header({ menuOn, setMenuOn, pathname }: HeaderProps) {
   const pageTitleRef = useRef<HTMLHeadingElement>(null);
-  const pageTitle = pathname === '/about' ? 'About Me' : 'Experience';
+  const pageTitle = pathname === '/contact' ? 'Contact' : 'Experience';
 
   useEffect(() => {
     const pageTitleEl = pageTitleRef.current as HTMLHeadingElement;

@@ -477,7 +477,6 @@ const WrapperSt = styled.section`
 
       > .fadeIn > img {
         width: 240px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
         border-radius: 120px;
         transition-delay: 0.3s;
       }
@@ -614,18 +613,23 @@ const WrapperSt = styled.section`
           .fadeUp:nth-child(1) {
             transition-delay: 0.1s;
           }
+
           .fadeUp:nth-child(2) {
             transition-delay: 0.2s;
           }
+
           .fadeUp:nth-child(3) {
             transition-delay: 0.3s;
           }
+
           .fadeUp:nth-child(4) {
             transition-delay: 0.4s;
           }
+
           .fadeUp:nth-child(5) {
             transition-delay: 0.5s;
           }
+
           .fadeUp:nth-child(6) {
             transition-delay: 0.6s;
           }
@@ -652,7 +656,7 @@ const WrapperSt = styled.section`
     }
 
     .container:nth-child(2) {
-      background-image: url('/public/images/blog/background_02.png');
+      background-image: url('${PUBLIC_DIR}images/blog/background_02.png');
       background-repeat: no-repeat;
       background-size: cover;
 

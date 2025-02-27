@@ -56,8 +56,8 @@ export default function Madeinreal() {
         <div className="bannerWrap">
           <ScrollActiveEl className="cover coverChange" />
           <div className="bannerContainer">
-            <img src="/public/images/mir/banner.png" alt="배너 이미지" />
-            <img src="/public/images/mir/banner.png" alt="배너 이미지" />
+            <img src={`${PUBLIC_DIR}images/mir/banner.png`} alt="배너 이미지" />
+            <img src={`${PUBLIC_DIR}images/mir/banner.png`} alt="배너 이미지" />
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Madeinreal() {
         <div className="mockUpImgWrap">
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/builder_mockup.png"
+              src={`${PUBLIC_DIR}images/mir/builder_mockup.png`}
               alt="빌더 메인 목업이미지"
             />
           </ScrollActiveEl>
@@ -584,20 +584,20 @@ const WrapperSt = styled.section`
 
         &:nth-child(1) {
           left: 0;
-          top: 0;
+          bottom: 0;
           transition-delay: 0.6s;
         }
 
         &:nth-child(2) {
           left: 50%;
-          top: 0;
+          bottom: 0;
           transform: translateX(-50%);
           transition-delay: 0.5s;
         }
 
         &:nth-child(3) {
           right: 0;
-          top: 0;
+          bottom: 0;
           transition-delay: 0.6s;
         }
 
@@ -647,7 +647,7 @@ const WrapperSt = styled.section`
   }
 
   .con7 {
-    background-image: url('/public/images/mir/background_half_circle.png');
+    background-image: url('${PUBLIC_DIR}images/mir/background_half_circle.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center bottom;
@@ -719,7 +719,7 @@ const WrapperSt = styled.section`
     }
 
     .imageAnimationWrap.right {
-      background-image: url('/public/images/mir/background_gradation_right.png');
+      background-image: url('${PUBLIC_DIR}images/mir/background_gradation_right.png');
       background-position: right center;
 
       right: 0;
@@ -741,7 +741,7 @@ const WrapperSt = styled.section`
     }
 
     .imageAnimationWrap.left {
-      background-image: url('/public/images/mir/background_gradation_left.png');
+      background-image: url('${PUBLIC_DIR}images/mir/background_gradation_left.png');
       background-position: left center;
 
       left: 0;
@@ -932,10 +932,6 @@ const WrapperSt = styled.section`
       .container {
         padding: 40px 0;
       }
-    }
-
-    .fadeUp {
-      transform: translateY(40px);
     }
 
     .con2 {

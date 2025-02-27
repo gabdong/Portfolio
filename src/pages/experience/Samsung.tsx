@@ -95,12 +95,11 @@ export default function Samsung() {
               alt="배경 꾸밈요소"
             />
           </ScrollActiveEl>
-          <ScrollActiveEl className="fadeUp">
-            <img
-              src={`${PUBLIC_DIR}images/samsung/background_3d_circle.png`}
-              alt="배경 3d 원형도형"
-            />
-          </ScrollActiveEl>
+          <img
+            src={`${PUBLIC_DIR}images/samsung/background_3d_circle.png`}
+            alt="배경 3d 원형도형"
+            className="balloonAnimation"
+          />
         </div>
         <div className="container" style={{ textAlign: 'right' }}>
           <ScrollActiveEl className="fadeUp">
@@ -258,22 +257,20 @@ export default function Samsung() {
             src={`${PUBLIC_DIR}images/samsung/background_obj_07.png`}
             alt="배경 꾸밈요소"
           />
-          <ScrollActiveEl className="fadeUp">
-            <img
-              src={`${PUBLIC_DIR}images/samsung/background_obj_08.png`}
-              alt="배경 꾸밈요소"
-            />
-          </ScrollActiveEl>
+          <img
+            src={`${PUBLIC_DIR}images/samsung/background_obj_08.png`}
+            alt="배경 꾸밈요소"
+            className="balloonAnimation"
+          />
           <img
             src={`${PUBLIC_DIR}images/samsung/background_obj_09.png`}
             alt="배경 꾸밈요소"
           />
-          <ScrollActiveEl className="fadeUp">
-            <img
-              src={`${PUBLIC_DIR}images/samsung/background_3d_circle.png`}
-              alt="배경 꾸밈요소"
-            />
-          </ScrollActiveEl>
+          <img
+            src={`${PUBLIC_DIR}images/samsung/background_3d_circle.png`}
+            alt="배경 꾸밈요소"
+            className="balloonAnimation"
+          />
         </div>
         <div className="container reverse">
           <ScrollActiveEl className="fadeLeft textWrapAnimation">
@@ -313,20 +310,7 @@ export default function Samsung() {
         </div>
 
         <div className="container">
-          <div className="imgWrap">
-            <ScrollActiveEl className="fadeIn">
-              <img
-                src={`${PUBLIC_DIR}images/samsung/filter_01.png`}
-                alt="필터 이미지"
-              />
-            </ScrollActiveEl>
-            <ScrollActiveEl className="fadeIn coverImg">
-              <img
-                src={`${PUBLIC_DIR}images/samsung/filter_02.png`}
-                alt="프로필 선택시 이미지"
-              />
-            </ScrollActiveEl>
-          </div>
+          <div className="imgWrap changeImgWrap"></div>
           <ScrollActiveEl className="fadeRight textWrapAnimation">
             <div className="textWrap">
               <span className="label">Convenience</span>
@@ -561,15 +545,15 @@ const WrapperSt = styled.section`
       max-width: 600px;
       margin: 0 auto;
       aspect-ratio: 222 / 445;
-      background-image: url('/public/images/samsung/mockup_empty.png');
+      background-image: url('${PUBLIC_DIR}images/samsung/mockup_empty.png');
       background-size: cover;
 
       position: relative;
       z-index: 1;
 
       .scrollContainer {
-        width: 86.5%;
-        height: 73.5%;
+        width: 86%;
+        height: 73.3%;
         overflow: hidden;
 
         position: absolute;
@@ -723,7 +707,7 @@ const WrapperSt = styled.section`
         position: absolute;
       }
 
-      & > img:nth-of-type(1) {
+      img:nth-of-type(1) {
         width: 50%;
         opacity: 0.6;
 
@@ -731,7 +715,7 @@ const WrapperSt = styled.section`
         top: 10%;
       }
 
-      .scrollActiveEl:nth-of-type(1) {
+      img:nth-of-type(2) {
         opacity: 0.7;
         transition-delay: 0.6s;
 
@@ -739,7 +723,7 @@ const WrapperSt = styled.section`
         bottom: 60%;
       }
 
-      img:nth-of-type(2) {
+      img:nth-of-type(3) {
         width: 50%;
         opacity: 0.5;
 
@@ -747,10 +731,9 @@ const WrapperSt = styled.section`
         bottom: 5%;
       }
 
-      .scrollActiveEl:nth-of-type(2) {
+      img:nth-of-type(4) {
         width: 10%;
         opacity: 0.5;
-        transition-delay: 0.6s;
 
         left: 5%;
         bottom: 5%;
@@ -781,6 +764,33 @@ const WrapperSt = styled.section`
           transition-delay: 0.3s;
         }
 
+        &.changeImgWrap {
+          width: 25%;
+          aspect-ratio: 301 / 666;
+          background-size: contain;
+
+          @keyframes changeBackground {
+            0% {
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.png');
+              opacity: 1;
+            }
+            25% {
+              opacity: 0.9;
+            }
+            50% {
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_02.png');
+              opacity: 1;
+            }
+            75% {
+              opacity: 0.9;
+            }
+            100% {
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.png');
+              opacity: 1;
+            }
+          }
+          animation: changeBackground 3s infinite;
+        }
         .coverImg {
           transition-delay: 0.9s;
 
@@ -944,15 +954,15 @@ const WrapperSt = styled.section`
       padding: 140px 0;
 
       .backgroundWrap {
-        & > img:nth-of-type(1) {
+        img:nth-of-type(1) {
           width: 40%;
         }
 
-        .scrollActiveEl:nth-of-type(1) {
+        img:nth-of-type(2) {
           bottom: 50%;
         }
 
-        img:nth-of-type(2) {
+        img:nth-of-type(3) {
           width: 40%;
         }
       }
@@ -1098,6 +1108,10 @@ const WrapperSt = styled.section`
 
         .imgWrap {
           width: 90%;
+
+          &.changeImgWrap {
+            width: 90%;
+          }
         }
       }
     }
