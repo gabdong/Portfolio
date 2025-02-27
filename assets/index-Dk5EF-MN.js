@@ -944,12 +944,14 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       .scrollContainer {
         width: 86%;
         height: 73.3%;
-        overflow: hidden !important;
+        overflow: hidden;
 
         position: absolute;
         left: 50%;
         top: 14.4%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateZ(0);
+        will-change: transform;
+        clip-path: inset(0 0 0 0);
 
         img {
           width: 100%;
