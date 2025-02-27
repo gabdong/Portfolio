@@ -944,7 +944,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       .scrollContainer {
         width: 86%;
         height: 73.3%;
-        overflow: hidden;
+        overflow: hidden !important;
 
         position: absolute;
         left: 50%;
