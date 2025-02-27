@@ -9,6 +9,7 @@ import Samsung from '@pages/experience/Samsung';
 import Blog from '@pages/experience/Blog';
 import MaxWidthContainer from '@components/MaxWidthContainer';
 import ClosePortfolioViewBtn from '@components/ClosePortfolioViewBtn';
+import { setHeaderVisibility } from '@lib/utils';
 
 type ExperienceListData = {
   animationPosition: 'left' | 'top' | 'right';
@@ -65,6 +66,7 @@ export default function Experience() {
     if (!portFolioViewName) {
       for (const item of experienceItem) {
         item.classList.add('active');
+        setHeaderVisibility(true);
       }
     }
 
