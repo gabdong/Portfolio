@@ -123,6 +123,10 @@ export default function Samsung() {
         </div>
         <ScrollActiveEl className="fadeUp scrollAnimationWrap">
           <div className="scrollWrap">
+            <img
+              src={`${PUBLIC_DIR}images/samsung/mockup_empty.png`}
+              alt="페이지 스크롤 애니메이션 이미지"
+            />
             <div className="scrollContainer">
               <img
                 src={`${PUBLIC_DIR}images/samsung/scroll_img.png`}
@@ -545,11 +549,16 @@ const WrapperSt = styled.section`
       max-width: 600px;
       margin: 0 auto;
       aspect-ratio: 222 / 445;
-      background-image: url('${PUBLIC_DIR}images/samsung/mockup_empty.png');
-      background-size: cover;
 
       position: relative;
       z-index: 1;
+
+      > img {
+        position: absolute;
+        left: 0;
+        top: 09;
+        z-index: 1;
+      }
 
       .scrollContainer {
         width: 86%;
