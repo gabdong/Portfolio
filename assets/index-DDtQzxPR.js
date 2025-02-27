@@ -73,6 +73,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
   img {
     max-width: 40%;
+    aspect-ratio: 284 / 379;
   }
 
   .textWrap {
