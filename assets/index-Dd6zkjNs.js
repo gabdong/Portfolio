@@ -330,20 +330,20 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
 
         &:nth-child(1) {
           left: 0;
-          top: 0;
+          bottom: 0;
           transition-delay: 0.6s;
         }
 
         &:nth-child(2) {
           left: 50%;
-          top: 0;
+          bottom: 0;
           transform: translateX(-50%);
           transition-delay: 0.5s;
         }
 
         &:nth-child(3) {
           right: 0;
-          top: 0;
+          bottom: 0;
           transition-delay: 0.6s;
         }
 
@@ -678,10 +678,6 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
       .container {
         padding: 40px 0;
       }
-    }
-
-    .fadeUp {
-      transform: translateY(40px);
     }
 
     .con2 {
