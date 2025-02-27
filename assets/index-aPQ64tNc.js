@@ -937,8 +937,8 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       z-index: 1;
 
       .scrollContainer {
-        width: 86.5%;
-        height: 73.5%;
+        width: 86%;
+        height: 73.3%;
         overflow: hidden;
 
         position: absolute;
@@ -1159,15 +1159,22 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
               background-image: url('${xe}images/samsung/filter_01.png');
               opacity: 1;
             }
-            50% {
+            25% {
               opacity: 0.9;
             }
-            100% {
+            50% {
               background-image: url('${xe}images/samsung/filter_02.png');
               opacity: 1;
             }
+            75% {
+              opacity: 0.9;
+            }
+            100% {
+              background-image: url('${xe}images/samsung/filter_01.png');
+              opacity: 1;
+            }
           }
-          animation: changeBackground 2s infinite;
+          animation: changeBackground 3s infinite;
         }
         .coverImg {
           transition-delay: 0.9s;
@@ -1604,7 +1611,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
       > .fadeIn > img {
         width: 240px;
-        box-shadow: 0 0 30px rgba(92, 92, 92, 0.8);
         border-radius: 120px;
         transition-delay: 0.3s;
       }
