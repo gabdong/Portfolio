@@ -1460,7 +1460,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       }
 
       .scrollWrap {
-        width: 50%;
+        width: 80%;
       }
     }
 
@@ -2510,7 +2510,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   }
 `;function X0(){const[i,o]=C.useState(!1),s=qt(),{pathname:d}=s;return u.jsxs(G0,{id:"nav",children:[u.jsx(D0,{menuOn:i,setMenuOn:o,pathname:d}),u.jsx(Q0,{menuOn:i,setMenuOn:o,pathname:d})]})}const G0=ye.nav`
   overflow: hidden;
-`;function J0(){return console.log("---------- App rendering ----------"),console.log("/Portfolio/"),u.jsx(Z0,{id:"wrapper",children:u.jsxs(ig,{basename:"/Portfolio/",children:[u.jsx(X0,{}),u.jsx(q0,{children:u.jsxs($m,{children:[u.jsx(Rl,{path:"/",element:u.jsx(Xd,{})}),u.jsx(Rl,{path:"/experience",element:u.jsx(Xd,{})}),u.jsx(Rl,{path:"/contact",element:u.jsx(y0,{})})]})})]})})}const Z0=ye.div`
+`;function J0(){return console.log("---------- App rendering ----------"),u.jsx(Z0,{id:"wrapper",children:u.jsxs(ig,{basename:"/Portfolio/",children:[u.jsx(X0,{}),u.jsx(q0,{children:u.jsxs($m,{children:[u.jsx(Rl,{path:"/",element:u.jsx(Xd,{})}),u.jsx(Rl,{path:"/experience",element:u.jsx(Xd,{})}),u.jsx(Rl,{path:"/contact",element:u.jsx(y0,{})})]})})]})})}const Z0=ye.div`
   width: 100%;
   height: 100%;
 `,q0=ye.main`
