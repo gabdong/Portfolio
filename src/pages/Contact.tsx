@@ -11,14 +11,14 @@ export default function Contact() {
         <h2 className="blind">연락처 페이지</h2>
         <img src={`${PUBLIC_DIR}images/profile.jpg`} alt="프로필이미지" />
         <div className="textWrap">
-          <span className="title">Name: Kim Dong Hwan</span>
-          <span className="title">Phone: 010-8737-9411</span>
-          <span className="title">Email: hwan970104@gmail.com</span>
+          <span className="subTitle">Name: Kim Dong Hwan</span>
+          <span className="subTitle">Phone: 010-8737-9411</span>
+          <span className="subTitle">Email: hwan970104@gmail.com</span>
           <a href="https://github.com/gabdong" target="_blank">
-            <span className="title">Github</span>
+            <span className="subTitle">Github</span>
           </a>
           <a href="https://gabdong.com" target="_blank">
-            <span className="title">Blog</span>
+            <span className="subTitle">Blog</span>
           </a>
         </div>
       </WrapperSt>
@@ -34,9 +34,11 @@ const WrapperSt = styled.section`
   margin: 0 auto;
 
   img {
-    flex: 1;
-
     max-width: 40%;
+    height: auto;
+    max-height: 80vh;
+    aspect-ratio: 284 / 379;
+    object-fit: contain;
   }
 
   .textWrap {
