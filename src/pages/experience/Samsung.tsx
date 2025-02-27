@@ -568,7 +568,9 @@ const WrapperSt = styled.section`
         position: absolute;
         left: 50%;
         top: 14.4%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateZ(0);
+        will-change: transform;
+        clip-path: inset(0 0 0 0);
 
         img {
           width: 100%;
@@ -780,33 +782,25 @@ const WrapperSt = styled.section`
 
           @keyframes changeBackground {
             0% {
-              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.png');
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.jpg');
               opacity: 1;
             }
             25% {
               opacity: 0.9;
             }
             50% {
-              background-image: url('${PUBLIC_DIR}images/samsung/filter_02.png');
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_02.jpg');
               opacity: 1;
             }
             75% {
               opacity: 0.9;
             }
             100% {
-              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.png');
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.jpg');
               opacity: 1;
             }
           }
           animation: changeBackground 3s infinite;
-        }
-        .coverImg {
-          transition-delay: 0.9s;
-
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
         }
       }
 
@@ -1077,7 +1071,7 @@ const WrapperSt = styled.section`
       }
 
       .scrollWrap {
-        width: 50%;
+        width: 80%;
       }
     }
 

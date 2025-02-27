@@ -155,7 +155,7 @@ const ExperienceListSt = styled.ul`
 
   ${media.small`
     flex-direction: column;
-    gap: 36px;
+    gap: 20px;
   `}
 `;
 const ExperienceItemSt = styled.li`
@@ -243,7 +243,8 @@ const ExperienceItemSt = styled.li`
   `}
 
   ${media.small`
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   `}
 `;
 const PortfolioViewWrapSt = styled.div`
