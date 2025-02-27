@@ -72,8 +72,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   margin: 0 auto;
 
   img {
-    flex: 1;
-
     max-width: 40%;
   }
 
