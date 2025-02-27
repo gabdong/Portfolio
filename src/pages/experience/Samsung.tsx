@@ -782,21 +782,21 @@ const WrapperSt = styled.section`
 
           @keyframes changeBackground {
             0% {
-              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.jpg');
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.png');
               opacity: 1;
             }
             25% {
               opacity: 0.9;
             }
             50% {
-              background-image: url('${PUBLIC_DIR}images/samsung/filter_02.jpg');
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_02.png');
               opacity: 1;
             }
             75% {
               opacity: 0.9;
             }
             100% {
-              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.jpg');
+              background-image: url('${PUBLIC_DIR}images/samsung/filter_01.png');
               opacity: 1;
             }
           }
