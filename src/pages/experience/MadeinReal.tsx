@@ -503,7 +503,7 @@ const WrapperSt = styled.section`
   .con4 {
     padding: unset;
     margin-top: 180px;
-    background-image: url('/public/images/mir/builder_sample.png');
+    background-image: url('${PUBLIC_DIR}images/mir/builder_sample.png');
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
