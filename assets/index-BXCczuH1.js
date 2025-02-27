@@ -2192,7 +2192,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
   ${Je.small`
     flex-direction: column;
-    gap: 36px;
+    gap: 20px;
   `}
 `,T0=ye.li`
   display: flex;
@@ -2279,7 +2279,8 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   `}
 
   ${Je.small`
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   `}
 `,L0=ye.div`
   width: 100%;
