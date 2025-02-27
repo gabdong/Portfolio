@@ -19,6 +19,8 @@ type ExperienceListData = {
   thumbnail: string;
 };
 
+const PUBLIC_DIR = import.meta.env.VITE_PUBLIC_DIR;
+
 const experienceArr: ExperienceListData[] = [
   {
     animationPosition: 'left',
@@ -26,7 +28,7 @@ const experienceArr: ExperienceListData[] = [
     title: 'MADEINREAL',
     description: '병/의원 자동화 플랫폼',
     link: 'madeinreal',
-    thumbnail: '/public/images/mir/thumbnail.jpg',
+    thumbnail: `${PUBLIC_DIR}images/mir/thumbnail.jpg`,
   },
   {
     animationPosition: 'top',
@@ -34,7 +36,7 @@ const experienceArr: ExperienceListData[] = [
     title: '삼성생명',
     description: '삼성생명 이벤트 페이지',
     link: 'samsung',
-    thumbnail: '/public/images/samsung/thumbnail.jpg',
+    thumbnail: `${PUBLIC_DIR}images/samsung/thumbnail.jpg`,
   },
   {
     animationPosition: 'right',
@@ -42,7 +44,7 @@ const experienceArr: ExperienceListData[] = [
     title: 'Blog',
     description: '블로그 제작',
     link: 'blog',
-    thumbnail: '/public/images/blog/thumbnail.png',
+    thumbnail: `${PUBLIC_DIR}images/blog/thumbnail.png`,
   },
 ];
 
@@ -80,7 +82,7 @@ export default function Experience() {
   return (
     <>
       {/* //* 작업물 리스트 */}
-      <MaxWidthContainer style={{ paddingTop: '140px', overflowY: 'auto' }}>
+      <MaxWidthContainer style={{ paddingTop: '140px' }} className="scroll">
         <WrapperSt id="experienceListWrap">
           <h2 className="blind">작업물 리스트</h2>
           <ExperienceListSt id="experienceList" ref={experienceItemListRef}>

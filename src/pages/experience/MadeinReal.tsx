@@ -6,6 +6,8 @@ import media from '@lib/mediaQueries';
 
 import ScrollActiveEl from '@components/ScrollActiveEl';
 
+const PUBLIC_DIR = import.meta.env.VITE_PUBLIC_DIR;
+
 export default function Madeinreal() {
   useEffect(() => {
     setHeaderVisibility(false);
@@ -17,11 +19,14 @@ export default function Madeinreal() {
 
       <div className="con1 con">
         <img
-          src="/public/images/mir/logo.png"
+          src={`${PUBLIC_DIR}images/mir/logo.png`}
           id="mirLogo"
           alt="메이드인리얼 로고"
         />
-        <img src="/public/images/mir/main.png" alt="메이드인리얼 메인 목업" />
+        <img
+          src={`${PUBLIC_DIR}images/mir/main.png`}
+          alt="메이드인리얼 메인 목업"
+        />
       </div>
 
       <div className="con2 con">
@@ -96,19 +101,19 @@ export default function Madeinreal() {
         <div className="backgroundWrap">
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_half_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_half_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_half_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_half_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_half_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_half_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
@@ -119,25 +124,25 @@ export default function Madeinreal() {
         <div className="backgroundWrap">
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/mir/background_circle.png"
+              src={`${PUBLIC_DIR}images/mir/background_circle.png`}
               alt="배경 원형 꾸밈요소"
             />
           </ScrollActiveEl>
@@ -154,7 +159,7 @@ export default function Madeinreal() {
         <div className="container">
           <span className="subTitle">페이지 제작 기능</span>
           <img
-            src="/public/images/mir/builder_main.png"
+            src={`${PUBLIC_DIR}images/mir/builder_main.png`}
             alt="페이지 빌더 이미지"
           />
           <ul className="infoUl">
@@ -191,7 +196,7 @@ export default function Madeinreal() {
         <div className="container">
           <span className="subTitle">팝업 관리 기능</span>
           <img
-            src="/public/images/mir/builder_popup.png"
+            src={`${PUBLIC_DIR}images/mir/builder_popup.png`}
             alt="팝업 관리 기능 이미지"
           />
           <ul className="infoUl">
@@ -215,7 +220,7 @@ export default function Madeinreal() {
         <div className="container">
           <span className="subTitle">상담 및 진료 예약시스템 개선</span>
           <img
-            src="/public/images/mir/builder_reserve.png"
+            src={`${PUBLIC_DIR}images/mir/builder_reserve.png`}
             alt="예약 페이지 이미지"
           />
           <ul className="infoUl">
@@ -241,14 +246,23 @@ export default function Madeinreal() {
           <div className="deviceImgContainer">
             <ScrollActiveEl className="cover coverChange" />
             <img
-              src="/public/images/mir/device_placeholder.png"
+              src={`${PUBLIC_DIR}images/mir/device_placeholder.png`}
               alt="장비, 상품관리 빈칸이미지"
             />
-            <img src="/public/images/mir/device_01.png" alt="의료장비 이미지" />
-            <img src="/public/images/mir/device_02.png" alt="의료장비 이미지" />
-            <img src="/public/images/mir/device_03.png" alt="의료장비 이미지" />
             <img
-              src="/public/images/mir/device_placeholder.png"
+              src={`${PUBLIC_DIR}images/mir/device_01.png`}
+              alt="의료장비 이미지"
+            />
+            <img
+              src={`${PUBLIC_DIR}images/mir/device_02.png`}
+              alt="의료장비 이미지"
+            />
+            <img
+              src={`${PUBLIC_DIR}images/mir/device_03.png`}
+              alt="의료장비 이미지"
+            />
+            <img
+              src={`${PUBLIC_DIR}images/mir/device_placeholder.png`}
               alt="장비, 상품관리 빈칸이미지"
             />
           </div>
@@ -293,7 +307,7 @@ export default function Madeinreal() {
         <div className="imageAnimationWrap right">
           <ScrollActiveEl className="imageAnimation">
             <img
-              src="/public/images/mir/crm_service.png"
+              src={`${PUBLIC_DIR}images/mir/crm_service.png`}
               alt="crm 관련 이미지"
             />
           </ScrollActiveEl>
@@ -324,7 +338,7 @@ export default function Madeinreal() {
         <div className="imageAnimationWrap left">
           <ScrollActiveEl className="imageAnimation">
             <img
-              src="/public/images/mir/works_service.png"
+              src={`${PUBLIC_DIR}images/mir/works_service.png`}
               alt="협업툴 관련이미지"
             />
           </ScrollActiveEl>

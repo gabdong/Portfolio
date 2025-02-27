@@ -6,19 +6,21 @@ import media from '@lib/mediaQueries';
 
 import ScrollActiveEl from '@components/ScrollActiveEl';
 
+const PUBLIC_DIR = import.meta.env.VITE_PUBLIC_DIR;
+
 export default function Blog() {
   useEffect(() => {
     setHeaderVisibility(false);
   }, []);
 
   return (
-    <WrapperSt>
+    <WrapperSt className="scroll">
       <h2 className="blind">블로그 작업내용</h2>
 
       <div className="con con1">
         <ScrollActiveEl className="fadeIn">
           <img
-            src="/public/images/blog/logo.png"
+            src={`${PUBLIC_DIR}images/blog/logo.png`}
             id="blogLogo"
             alt="블로그 로고"
           />
@@ -27,7 +29,7 @@ export default function Blog() {
 
       <div className="con con2">
         <img
-          src="/public/images/blog/white_star.png"
+          src={`${PUBLIC_DIR}images/blog/white_star.png`}
           alt="흰색 별모양 꾸밈요소"
           className="rotateImg"
         />
@@ -45,9 +47,12 @@ export default function Blog() {
           <br />
           helpful information for developers facing similar challenges.
         </span>
-        <img src="/public/images/blog/white_logo.png" alt="흰색 블로그 로고" />
         <img
-          src="/public/images/blog/background_01.png"
+          src={`${PUBLIC_DIR}images/blog/white_logo.png`}
+          alt="흰색 블로그 로고"
+        />
+        <img
+          src={`${PUBLIC_DIR}images/blog/background_01.png`}
           alt="배경 그라데이션"
         />
       </div>
@@ -56,7 +61,7 @@ export default function Blog() {
         <div className="container">
           <ScrollActiveEl className="fadeIn">
             <img
-              src="/public/images/blog/working_man.png"
+              src={`${PUBLIC_DIR}images/blog/working_man.png`}
               alt="작업중인 남자 캐릭터"
             />
           </ScrollActiveEl>
@@ -81,7 +86,7 @@ export default function Blog() {
               </span>
             </ScrollActiveEl>
             <img
-              src="/public/images/blog/blue_star.png"
+              src={`${PUBLIC_DIR}images/blog/blue_star.png`}
               alt="파란색 별모양 꾸밈요소"
               className="rotateImg"
             />
@@ -91,29 +96,32 @@ export default function Blog() {
 
       <div className="con con4">
         <ScrollActiveEl className="fadeIn">
-          <img src="/public/images/blog/mockup.jpg" alt="목업 이미지" />
-        </ScrollActiveEl>
-        <ScrollActiveEl className="fadeUp">
-          <img src="/public/images/blog/search.png" alt="검색창 이미지" />
+          <img src={`${PUBLIC_DIR}images/blog/mockup.jpg`} alt="목업 이미지" />
         </ScrollActiveEl>
         <ScrollActiveEl className="fadeUp">
           <img
-            src="/public/images/blog/login_modal.png"
+            src={`${PUBLIC_DIR}images/blog/search.png`}
+            alt="검색창 이미지"
+          />
+        </ScrollActiveEl>
+        <ScrollActiveEl className="fadeUp">
+          <img
+            src={`${PUBLIC_DIR}images/blog/login_modal.png`}
             alt="로그인 모달 이미지"
           />
         </ScrollActiveEl>
         <ScrollActiveEl className="fadeUp">
           <img
-            src="/public/images/blog/upload_modal.png"
+            src={`${PUBLIC_DIR}images/blog/upload_modal.png`}
             alt="업로드 모달 이미지"
           />
         </ScrollActiveEl>
         <ScrollActiveEl className="fadeUp">
-          <img src="/public/images/blog/post.png" alt="게시글 이미지" />
+          <img src={`${PUBLIC_DIR}images/blog/post.png`} alt="게시글 이미지" />
         </ScrollActiveEl>
         <ScrollActiveEl className="fadeIn">
           <img
-            src="/public/images/blog/blue_star.png"
+            src={`${PUBLIC_DIR}images/blog/blue_star.png`}
             alt="파란색 별모양 꾸밈요소"
             className="rotateImg"
           />
@@ -123,22 +131,22 @@ export default function Blog() {
       <div className="con con5">
         <div className="container">
           <img
-            src="/public/images/blog/number_01.png"
+            src={`${PUBLIC_DIR}images/blog/number_01.png`}
             alt="숫자 1 이미지"
             className="numberImg"
           />
           <div className="imgWrap">
             <img
-              src="/public/images/blog/login_modal.png"
+              src={`${PUBLIC_DIR}images/blog/login_modal.png`}
               alt="로그인 모달 이미지"
             />
             <img
-              src="/public/images/blog/character_01.png"
+              src={`${PUBLIC_DIR}images/blog/character_01.png`}
               alt="캐릭터 이미지"
               className="characterImg wobbleImg"
             />
             <img
-              src="/public/images/blog/blue_star.png"
+              src={`${PUBLIC_DIR}images/blog/blue_star.png`}
               alt="파란색 별모양 꾸밈요소"
               className="rotateImg"
             />
@@ -156,7 +164,10 @@ export default function Blog() {
             </ScrollActiveEl>
             <div className="textWrapContainer">
               <ScrollActiveEl className="fadeUp">
-                <img src="/public/images/blog/key.png" alt="열쇠 이미지" />
+                <img
+                  src={`${PUBLIC_DIR}images/blog/key.png`}
+                  alt="열쇠 이미지"
+                />
               </ScrollActiveEl>
               <ScrollActiveEl className="fadeUp">
                 <span className="subTitle">• 회원가입 및 로그인 구현</span>
@@ -188,7 +199,7 @@ export default function Blog() {
             <div className="textWrapContainer">
               <ScrollActiveEl className="fadeUp">
                 <img
-                  src="/public/images/blog/locked_with_pen.png"
+                  src={`${PUBLIC_DIR}images/blog/locked_with_pen.png`}
                   alt="자물쇠와 펜 이미지"
                 />
               </ScrollActiveEl>
@@ -227,18 +238,24 @@ export default function Blog() {
 
         <div className="container">
           <img
-            src="/public/images/blog/number_02.png"
+            src={`${PUBLIC_DIR}images/blog/number_02.png`}
             alt="숫자 2 이미지"
             className="numberImg"
           />
           <div className="imgWrap">
-            <img src="/public/images/blog/post.png" alt="게시글 이미지" />
             <img
-              src="/public/images/blog/character_03.png"
+              src={`${PUBLIC_DIR}images/blog/post.png`}
+              alt="게시글 이미지"
+            />
+            <img
+              src={`${PUBLIC_DIR}images/blog/character_03.png`}
               alt="캐릭터 이미지"
               className="characterImg wobbleImg"
             />
-            <img src="/public/images/blog/search.png" alt="검색창 이미지" />
+            <img
+              src={`${PUBLIC_DIR}images/blog/search.png`}
+              alt="검색창 이미지"
+            />
           </div>
           <div className="textWrap">
             <ScrollActiveEl className="fadeUp">
@@ -246,7 +263,10 @@ export default function Blog() {
             </ScrollActiveEl>
             <div className="textWrapContainer">
               <ScrollActiveEl className="fadeUp">
-                <img src="/public/images/blog/notepad.png" alt="노트 이미지" />
+                <img
+                  src={`${PUBLIC_DIR}images/blog/notepad.png`}
+                  alt="노트 이미지"
+                />
               </ScrollActiveEl>
               <ScrollActiveEl className="fadeUp">
                 <span className="subTitle">
@@ -263,7 +283,10 @@ export default function Blog() {
 
             <div className="textWrapContainer">
               <ScrollActiveEl className="fadeUp">
-                <img src="/public/images/blog/tag.png" alt="태그 이미지" />
+                <img
+                  src={`${PUBLIC_DIR}images/blog/tag.png`}
+                  alt="태그 이미지"
+                />
               </ScrollActiveEl>
               <ScrollActiveEl className="fadeUp">
                 <span className="subTitle">• 게시글 태그 기능</span>
@@ -284,7 +307,7 @@ export default function Blog() {
             <div className="textWrapContainer">
               <ScrollActiveEl className="fadeUp">
                 <img
-                  src="/public/images/blog/magnifying_glass.png"
+                  src={`${PUBLIC_DIR}images/blog/magnifying_glass.png`}
                   alt="돋보기 이미지"
                 />
               </ScrollActiveEl>
@@ -303,17 +326,17 @@ export default function Blog() {
 
         <div className="container">
           <img
-            src="/public/images/blog/number_03.png"
+            src={`${PUBLIC_DIR}images/blog/number_03.png`}
             alt="숫자 3 이미지"
             className="numberImg"
           />
           <div className="imgWrap">
             <img
-              src="/public/images/blog/upload_modal.png"
+              src={`${PUBLIC_DIR}images/blog/upload_modal.png`}
               alt="업로드 모달 이미지"
             />
             <img
-              src="/public/images/blog/character_02.png"
+              src={`${PUBLIC_DIR}images/blog/character_02.png`}
               alt="캐릭터 이미지"
               className="characterImg wobbleImg"
             />
@@ -343,10 +366,10 @@ export default function Blog() {
 
       <div className="con con6">
         <img
-          src="/public/images/blog/background_03.png"
+          src={`${PUBLIC_DIR}images/blog/background_03.png`}
           alt="배경 그라데이션"
         />
-        <img src="/public/images/blog/white_logo.png" alt="흰색 로고" />
+        <img src={`${PUBLIC_DIR}images/blog/white_logo.png`} alt="흰색 로고" />
       </div>
     </WrapperSt>
   );

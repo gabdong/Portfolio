@@ -6,20 +6,22 @@ import { setHeaderVisibility } from '@lib/utils';
 import ScrollActiveEl from '@components/ScrollActiveEl';
 import media from '@lib/mediaQueries';
 
+const PUBLIC_DIR = import.meta.env.VITE_PUBLIC_DIR;
+
 export default function Samsung() {
   useEffect(() => {
     setHeaderVisibility(false);
   }, []);
 
   return (
-    <WrapperSt>
+    <WrapperSt className="scroll">
       <h2 className="blind">삼성생명 이벤트페이지 작업내용</h2>
 
       <div className="con con1">
         <div className="backgroundWrap">
           <ScrollActiveEl className="fadeIn">
             <img
-              src="/public/images/samsung/background_obj_01.png"
+              src={`${PUBLIC_DIR}images/samsung/background_obj_01.png`}
               alt="꾸밈요소"
             />
           </ScrollActiveEl>
@@ -27,14 +29,17 @@ export default function Samsung() {
         <div className="container">
           <ScrollActiveEl className="fadeIn">
             <img
-              src="/public/images/samsung/logo.png"
+              src={`${PUBLIC_DIR}images/samsung/logo.png`}
               id="samsungLogo"
               alt="삼성생명 로고"
             />
           </ScrollActiveEl>
         </div>
         <ScrollActiveEl className="fadeUp">
-          <img src="/public/images/samsung/main.jpg" alt="삼성생명 메인 목업" />
+          <img
+            src={`${PUBLIC_DIR}images/samsung/main.jpg`}
+            alt="삼성생명 메인 목업"
+          />
         </ScrollActiveEl>
       </div>
 
@@ -42,23 +47,23 @@ export default function Samsung() {
         <div className="backgroundWrap">
           <ScrollActiveEl className="fadeIn">
             <img
-              src="/public/images/samsung/background_obj_02.png"
+              src={`${PUBLIC_DIR}images/samsung/background_obj_02.png`}
               alt="배경 꾸밈요소 별모양"
             />
           </ScrollActiveEl>
           <img
-            src="/public/images/samsung/background_obj_03.png"
+            src={`${PUBLIC_DIR}images/samsung/background_obj_03.png`}
             alt="배경 꾸밈요소 사각형"
           />
           <img
-            src="/public/images/samsung/background_obj_04.png"
+            src={`${PUBLIC_DIR}images/samsung/background_obj_04.png`}
             alt="배경 꾸밈요소"
           />
         </div>
         <div className="container">
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/samsung/award_logo.png"
+              src={`${PUBLIC_DIR}images/samsung/award_logo.png`}
               alt="60회 연도상 로고"
             />
           </ScrollActiveEl>
@@ -77,22 +82,22 @@ export default function Samsung() {
       <div className="con con3">
         <div className="backgroundWrap" style={{ overflow: 'visible' }}>
           <img
-            src="/public/images/samsung/trophy.png"
+            src={`${PUBLIC_DIR}images/samsung/trophy.png`}
             alt="배경 트로피 이미지"
           />
           <img
-            src="/public/images/samsung/background_obj_05.png"
+            src={`${PUBLIC_DIR}images/samsung/background_obj_05.png`}
             alt="배경 꾸밈요소"
           />
           <ScrollActiveEl className="fadeIn">
             <img
-              src="/public/images/samsung/background_obj_06.png"
+              src={`${PUBLIC_DIR}images/samsung/background_obj_06.png`}
               alt="배경 꾸밈요소"
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/samsung/background_3d_circle.png"
+              src={`${PUBLIC_DIR}images/samsung/background_3d_circle.png`}
               alt="배경 3d 원형도형"
             />
           </ScrollActiveEl>
@@ -121,7 +126,7 @@ export default function Samsung() {
           <div className="scrollWrap">
             <div className="scrollContainer">
               <img
-                src="/public/images/samsung/scroll_img.png"
+                src={`${PUBLIC_DIR}images/samsung/scroll_img.png`}
                 alt="페이지 스크롤 애니메이션 이미지"
               />
             </div>
@@ -166,7 +171,7 @@ export default function Samsung() {
           <ScrollActiveEl className="fadeIn">
             <div className="keywordItemDeco">
               <img
-                src="/public/images/samsung/deco_cheese.png"
+                src={`${PUBLIC_DIR}images/samsung/deco_cheese.png`}
                 alt="데코 치즈도형"
                 style={{
                   marginRight: '-10px',
@@ -175,7 +180,7 @@ export default function Samsung() {
                 }}
               />
               <img
-                src="/public/images/samsung/deco_square.png"
+                src={`${PUBLIC_DIR}images/samsung/deco_square.png`}
                 alt="데코 사각형"
               />
             </div>
@@ -207,7 +212,10 @@ export default function Samsung() {
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
             <div className="keywordItemDeco">
-              <img src="/public/images/samsung/deco_01.png" alt="데코 도형" />
+              <img
+                src={`${PUBLIC_DIR}images/samsung/deco_01.png`}
+                alt="데코 도형"
+              />
             </div>
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
@@ -218,7 +226,7 @@ export default function Samsung() {
           <ScrollActiveEl className="fadeIn">
             <div className="keywordItemDeco">
               <img
-                src="/public/images/samsung/background_obj_02.png"
+                src={`${PUBLIC_DIR}images/samsung/background_obj_02.png`}
                 alt="데코 도형"
               />
             </div>
@@ -235,7 +243,10 @@ export default function Samsung() {
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeIn">
             <div className="keywordItemDeco">
-              <img src="/public/images/samsung/deco_02.png" alt="데코 도형" />
+              <img
+                src={`${PUBLIC_DIR}images/samsung/deco_02.png`}
+                alt="데코 도형"
+              />
             </div>
           </ScrollActiveEl>
         </div>
@@ -244,22 +255,22 @@ export default function Samsung() {
       <div className="con con5">
         <div className="backgroundWrap">
           <img
-            src="/public/images/samsung/background_obj_07.png"
+            src={`${PUBLIC_DIR}images/samsung/background_obj_07.png`}
             alt="배경 꾸밈요소"
           />
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/samsung/background_obj_08.png"
+              src={`${PUBLIC_DIR}images/samsung/background_obj_08.png`}
               alt="배경 꾸밈요소"
             />
           </ScrollActiveEl>
           <img
-            src="/public/images/samsung/background_obj_09.png"
+            src={`${PUBLIC_DIR}images/samsung/background_obj_09.png`}
             alt="배경 꾸밈요소"
           />
           <ScrollActiveEl className="fadeUp">
             <img
-              src="/public/images/samsung/background_3d_circle.png"
+              src={`${PUBLIC_DIR}images/samsung/background_3d_circle.png`}
               alt="배경 꾸밈요소"
             />
           </ScrollActiveEl>
@@ -288,13 +299,13 @@ export default function Samsung() {
           <div className="imgWrap">
             <ScrollActiveEl className="fadeLeft leftImg">
               <img
-                src="/public/images/samsung/profile_left.png"
+                src={`${PUBLIC_DIR}images/samsung/profile_left.png`}
                 alt="프로필 선택시 이미지"
               />
             </ScrollActiveEl>
             <ScrollActiveEl className="fadeRight rightImg">
               <img
-                src="/public/images/samsung/profile_right.png"
+                src={`${PUBLIC_DIR}images/samsung/profile_right.png`}
                 alt="프로필 선택시 이미지"
               />
             </ScrollActiveEl>
@@ -305,13 +316,13 @@ export default function Samsung() {
           <div className="imgWrap">
             <ScrollActiveEl className="fadeIn">
               <img
-                src="/public/images/samsung/filter_01.png"
+                src={`${PUBLIC_DIR}images/samsung/filter_01.png`}
                 alt="필터 이미지"
               />
             </ScrollActiveEl>
             <ScrollActiveEl className="fadeIn coverImg">
               <img
-                src="/public/images/samsung/filter_02.png"
+                src={`${PUBLIC_DIR}images/samsung/filter_02.png`}
                 alt="프로필 선택시 이미지"
               />
             </ScrollActiveEl>
@@ -338,13 +349,16 @@ export default function Samsung() {
       </div>
 
       <div className="con con6">
-        <img src="/public/images/samsung/main_02.png" alt="목업 이미지" />
+        <img
+          src={`${PUBLIC_DIR}images/samsung/main_02.png`}
+          alt="목업 이미지"
+        />
       </div>
 
       <div className="con con7">
         <div className="container">
           <img
-            src="/public/images/samsung/deco_group.png"
+            src={`${PUBLIC_DIR}images/samsung/deco_group.png`}
             alt="도형 그룹이미지"
           />
           <span className="title">사용자 만족도 향상, 긍정적인 피드백</span>
