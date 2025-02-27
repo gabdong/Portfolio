@@ -6,7 +6,7 @@
   "homepage": "https://gabdong.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && mkdir dist/public && cp -r public dist/public",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
