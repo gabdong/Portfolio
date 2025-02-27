@@ -133,12 +133,12 @@
     transform: translate(0px, 0);
   }
   100% {
-    transform: translate(0px, 50px);
+    transform: translate(0px, 80px);
   }
 }
 
 .balloonAnimation {
-  animation: balloon 3s infinite ease-in-out alternate;
+  animation: balloon 2s infinite ease-in-out alternate;
 }
 
 .fadeIn {
