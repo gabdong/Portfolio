@@ -1160,8 +1160,10 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
         &.changeImgWrap {
           width: 25%;
+          max-height: 600px;
           aspect-ratio: 301 / 666;
           background-size: contain;
+          background-repeat: no-repeat;
 
           @keyframes changeBackground {
             0% {
