@@ -238,7 +238,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
         gap: 20px;
 
         width: 300%;
-        animation: banner 15s linear infinite;
+        animation: banner 20s linear infinite;
 
         img {
           max-width: unset;
@@ -518,7 +518,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
     .container {
       .caption {
-        font-size: 14px;
+        font-size: 16px;
       }
 
       .subTitle {
@@ -534,11 +534,11 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
           gap: 4px;
 
           span:nth-child(1) {
-            font-size: 16px;
+            font-size: 18px;
           }
 
           span:not(:nth-child(1)) {
-            font-size: 14px;
+            font-size: 16px;
             margin-left: 16px;
           }
         }
@@ -567,11 +567,11 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
     .con2 {
       .container {
-        gap: 12px;
+        gap: 0px;
       }
 
       .normalText {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
 
@@ -590,7 +590,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
         margin-top: 20px;
 
         .normalText {
-          font-size: 16px;
+          font-size: 18px;
         }
       }
     }
@@ -684,7 +684,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
     .con2 {
       .normalText {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -706,7 +706,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
       .container {
         .normalText {
-          font-size: 14px;
+          font-size: 16px;
         }
       }
     }
