@@ -1277,7 +1277,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
           }
         }
 
-        .titleXl {
+        .titleXL {
           font-size: 54px;
         }
       }
