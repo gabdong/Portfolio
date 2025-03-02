@@ -772,7 +772,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     flex-direction: column;
 
     width: 1080px;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
 
     position: relative;
@@ -1274,7 +1274,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       }
 
       .container {
-        gap: 0px;
+        gap: 18px;
 
         :nth-child(1) {
           img {
