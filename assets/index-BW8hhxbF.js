@@ -103,7 +103,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   width: 100%;
   height: 100%;
   background: var(--dark-m);
-  line-height: 1.5;
+  line-height: 1.2;
   overflow-x: hidden;
 
   img {
@@ -567,7 +567,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
     .con2 {
       .container {
-        gap: 0px;
+        gap: 10px;
       }
 
       .normalText {
