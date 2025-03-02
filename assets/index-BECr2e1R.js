@@ -783,7 +783,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     }
 
     .normalText {
-      font-size: 18px;
+      font-size: 20px;
       word-break: keep-all;
     }
   }
@@ -1377,7 +1377,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   ${Qe.small`
     .container {
       .normalText {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
 
