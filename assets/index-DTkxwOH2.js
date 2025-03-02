@@ -1195,7 +1195,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
         flex: 1;
 
         &.fadeRight {
-          flex: 1.57;
+          flex: 1.55;
         }
       }
 
