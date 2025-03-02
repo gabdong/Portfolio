@@ -1193,6 +1193,10 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
       .textWrapAnimation {
         flex: 1;
+
+        &.fadeRight {
+          flex: 1.57;
+        }
       }
 
       .textWrap {
