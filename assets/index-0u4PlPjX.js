@@ -1231,12 +1231,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
 
   //- Medium
   ${Qe.medium`
-    .container {
-      .normalText {
-        font-size: 16px;
-      }
-    }
-
     .con1 {
       gap: 60px;
 
@@ -1281,6 +1275,10 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
           img {
             width: 100px;
           }
+        }
+
+        .titleXl {
+          font-size: 54px;
         }
       }
     }
@@ -1379,7 +1377,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   ${Qe.small`
     .container {
       .normalText {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
