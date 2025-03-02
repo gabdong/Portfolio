@@ -1319,6 +1319,10 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       .container {
         gap: 10px;
         text-align: center;
+
+        .titleL {
+          font-size: 36px;
+        }
       }
     }
 
@@ -1528,7 +1532,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
   height: 100%;
   background: #fff;
   color: var(--gray);
-  line-height: 1.5;
+  line-height: 1.2;
   overflow-x: hidden;
 
   img {
@@ -1558,7 +1562,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     }
 
     .normalText {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -1595,7 +1599,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     }
 
     .normalText {
-      font-size: 20px;
       color: #fff;
 
       position: absolute;
@@ -1850,7 +1853,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       }
 
       .normalText {
-        font-size: 16px;
+        font-size: 18px;
         word-break: keep-all;
       }
     }
@@ -1869,7 +1872,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       }
 
       .normalText {
-        font-size: 18px;
         top: calc(5% + 64px);
       }
 
@@ -1975,7 +1977,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       }
 
       .normalText {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -1991,8 +1993,6 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
       }
 
       .normalText {
-        font-size: 16px;
-
         top: calc(5% + 54px);
       }
 
