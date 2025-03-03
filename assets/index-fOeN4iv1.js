@@ -1317,6 +1317,12 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
 
   //- Medium
   ${He.medium`
+    .container {
+      .normalText {
+        font-size: 18px;
+      }
+    }
+
     .con1 {
       gap: 60px;
 
@@ -1481,7 +1487,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   ${He.small`
     .container {
       .normalText {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -1593,7 +1599,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
 
       .container {
         .titleL {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
     }
@@ -2115,7 +2121,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
       }
 
       .normalText {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -2152,6 +2158,10 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
 
         .textWrap {
           gap: 14px;
+
+          .titleL {
+            font-size: 22px;
+          }
         }
       }
     }
