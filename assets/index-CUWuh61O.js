@@ -1489,6 +1489,10 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
       .normalText {
         font-size: 16px;
       }
+
+      .label {
+        font-size: 16px;
+      }
     }
 
     .con1 {
@@ -2180,13 +2184,13 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
       }
 
       .fadeUp:nth-child(4) {
-        max-width: 30%;
+        max-width: 20%;
 
         bottom: -5%;
       }
 
       .fadeUp:nth-child(5) {
-        max-width: 30%;
+        max-width: 20%;
 
         bottom: 4%;
       }
@@ -2221,6 +2225,8 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
           gap: 20px;
 
           .textWrapContainer {
+            gap: 8px;
+
             img {
               width: 30px;
             }
@@ -2446,6 +2452,10 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
     .experienceItemInfoText {
       display: flex;
       justify-content: center;
+
+      .fadeIn {
+        gap: 4px;
+      }
     }
   `}
 
