@@ -68,13 +68,25 @@ export default function Samsung() {
             />
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <span className="titleXL">The 60th</span>
+            <img
+              src={`${PUBLIC_DIR}images/samsung/text_01.png`}
+              alt="삼성행사 텍스트"
+            />
+            {/* <span className="titleXL">The 60th</span> */}
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <span className="titleXL">SAMSUNG LIFE INSURANCE</span>
+            <img
+              src={`${PUBLIC_DIR}images/samsung/text_02.png`}
+              alt="삼성행사 텍스트"
+            />
+            {/* <span className="titleXL">SAMSUNG LIFE INSURANCE</span> */}
           </ScrollActiveEl>
           <ScrollActiveEl className="fadeUp">
-            <span className="titleXL">ANNUAL AWARDS</span>
+            <img
+              src={`${PUBLIC_DIR}images/samsung/text_03.png`}
+              alt="삼성행사 텍스트"
+            />
+            {/* <span className="titleXL">ANNUAL AWARDS</span> */}
           </ScrollActiveEl>
         </div>
       </div>
@@ -369,7 +381,7 @@ const WrapperSt = styled.section`
   height: 100%;
   background: #fff;
   color: var(--gray);
-  line-height: 1.5;
+  line-height: 1.2;
   overflow-x: hidden;
 
   img {
@@ -388,7 +400,7 @@ const WrapperSt = styled.section`
     flex-direction: column;
 
     width: 1080px;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
 
     position: relative;
@@ -399,7 +411,7 @@ const WrapperSt = styled.section`
     }
 
     .normalText {
-      font-size: 18px;
+      font-size: 20px;
       word-break: keep-all;
     }
   }
@@ -439,7 +451,7 @@ const WrapperSt = styled.section`
   }
 
   .con2 {
-    padding: 180px 0;
+    padding: 0 0 280px 0;
     background: linear-gradient(to bottom, #fff, rgba(236, 236, 236));
 
     .backgroundWrap {
@@ -468,7 +480,7 @@ const WrapperSt = styled.section`
     }
 
     .container {
-      gap: 20px;
+      gap: 30px;
 
       :nth-child(1) {
         img {
@@ -480,14 +492,26 @@ const WrapperSt = styled.section`
 
       :nth-child(2) {
         transition-delay: 0.6s;
+
+        img {
+          height: 46px;
+        }
       }
 
       :nth-child(3) {
         transition-delay: 0.9s;
+
+        img {
+          height: 46px;
+        }
       }
 
       :nth-child(4) {
         transition-delay: 1.2s;
+
+        img {
+          height: 46px;
+        }
       }
     }
   }
@@ -781,6 +805,7 @@ const WrapperSt = styled.section`
           aspect-ratio: 301 / 666;
           background-size: contain;
           background-repeat: no-repeat;
+          background-position: center;
 
           @keyframes changeBackground {
             0% {
@@ -808,6 +833,10 @@ const WrapperSt = styled.section`
 
       .textWrapAnimation {
         flex: 1;
+
+        &.fadeRight {
+          flex: 1.55;
+        }
       }
 
       .textWrap {
@@ -822,6 +851,12 @@ const WrapperSt = styled.section`
         backdrop-filter: blur(30px);
         transition-delay: 0.6s;
       }
+    }
+  }
+
+  .con6 {
+    img {
+      width: 100%;
     }
   }
 
@@ -848,7 +883,7 @@ const WrapperSt = styled.section`
   ${media.medium`
     .container {
       .normalText {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
 
@@ -873,11 +908,13 @@ const WrapperSt = styled.section`
     }
 
     .con2 {
-      padding: 80px 0 180px 0;
+      padding-bottom: 200px;
 
       .backgroundWrap {
         :nth-child(1) {
           width: 70px;
+
+          top: 20%;
         }
 
         :nth-child(2) {
@@ -890,11 +927,27 @@ const WrapperSt = styled.section`
       }
 
       .container {
-        gap: 16px;
-
         :nth-child(1) {
           img {
             width: 100px;
+          }
+        }
+
+        :nth-child(2) {
+          img {
+            height: 40px;
+          }
+        }
+
+        :nth-child(3) {
+          img {
+            height: 40px;
+          }
+        }
+
+        :nth-child(4) {
+          img {
+            height: 40px;
           }
         }
       }
@@ -904,6 +957,10 @@ const WrapperSt = styled.section`
       gap: 60px;
 
       padding: 140px 0;
+
+      .scrollWrap {
+        width: 50%;
+      }
 
       .backgroundWrap {
         & > img:nth-of-type(1) {
@@ -928,6 +985,10 @@ const WrapperSt = styled.section`
       .container {
         gap: 10px;
         text-align: center;
+
+        .titleL {
+          font-size: 36px;
+        }
       }
     }
 
@@ -990,7 +1051,11 @@ const WrapperSt = styled.section`
   ${media.small`
     .container {
       .normalText {
-        font-size: 14px;
+        font-size: 16px;
+      }
+
+      .label {
+        font-size: 16px;
       }
     }
 
@@ -1015,7 +1080,7 @@ const WrapperSt = styled.section`
     }
 
     .con2 {
-      padding: 80px 0;
+      padding-bottom: 140px;
 
       .backgroundWrap {
         :nth-child(1) {
@@ -1032,11 +1097,35 @@ const WrapperSt = styled.section`
       }
 
       .container {
-        gap: 10px;
+        gap: 20px;
 
         :nth-child(1) {
           img {
             width: 60px;
+          }
+        }
+
+        :nth-child(2) {
+          img {
+            max-width: unset;
+            aspect-ratio: 666 / 115;
+            height: 16px;
+          }
+        }
+
+        :nth-child(3) {
+          img {
+            max-width: unset;
+            aspect-ratio: 2039 / 115;
+            height: 16px;
+          }
+        }
+
+        :nth-child(4) {
+          img {
+            max-width: unset;
+            aspect-ratio: 223 / 19;
+            height: 16px;
           }
         }
       }
@@ -1074,6 +1163,12 @@ const WrapperSt = styled.section`
 
       .scrollWrap {
         width: 80%;
+      }
+
+      .container {
+        .titleL {
+          font-size: 20px;
+        }
       }
     }
 

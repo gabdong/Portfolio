@@ -68,7 +68,8 @@ export default function Blog() {
           <div className="textWrap">
             <ScrollActiveEl className="fadeUp">
               <span className="titleL">
-                프론트엔드 개발자의 성장과 경험을 담은 블로그
+                프론트엔드 개발자의
+                <br /> 성장과 경험을 담은 블로그
               </span>
             </ScrollActiveEl>
             <ScrollActiveEl className="fadeUp">
@@ -316,7 +317,7 @@ export default function Blog() {
               </ScrollActiveEl>
               <ScrollActiveEl className="fadeUp">
                 <span className="normalText">
-                  - MYSQL LIKE 검색을 이요하여 게시글 제목과 내용 검색기능을
+                  - MYSQL LIKE 검색을 이용하여 게시글 제목과 내용 검색기능을
                   구현했습니다.
                 </span>
               </ScrollActiveEl>
@@ -383,7 +384,7 @@ const WrapperSt = styled.section`
   height: 100%;
   background: #fff;
   color: var(--gray);
-  line-height: 1.5;
+  line-height: 1.2;
   overflow-x: hidden;
 
   img {
@@ -413,7 +414,7 @@ const WrapperSt = styled.section`
     }
 
     .normalText {
-      font-size: 18px;
+      font-size: 22px;
     }
   }
 
@@ -450,7 +451,6 @@ const WrapperSt = styled.section`
     }
 
     .normalText {
-      font-size: 20px;
       color: #fff;
 
       position: absolute;
@@ -465,6 +465,10 @@ const WrapperSt = styled.section`
       left: 50%;
       bottom: 0;
       transform: translateX(-50%);
+    }
+
+    img:nth-child(4) {
+      width: 100%;
     }
   }
 
@@ -516,6 +520,10 @@ const WrapperSt = styled.section`
   .con4 {
     .fadeIn:nth-child(1) {
       transition-delay: 0.3s;
+
+      img {
+        width: 100%;
+      }
     }
 
     .fadeUp:nth-child(2) {
@@ -687,6 +695,10 @@ const WrapperSt = styled.section`
   }
 
   .con6 {
+    img:first-child {
+      width: 100%;
+    }
+
     img:nth-child(2) {
       width: 40%;
 
@@ -705,7 +717,7 @@ const WrapperSt = styled.section`
       }
 
       .normalText {
-        font-size: 16px;
+        font-size: 20px;
         word-break: keep-all;
       }
     }
@@ -724,7 +736,6 @@ const WrapperSt = styled.section`
       }
 
       .normalText {
-        font-size: 18px;
         top: calc(5% + 64px);
       }
 
@@ -830,7 +841,7 @@ const WrapperSt = styled.section`
       }
 
       .normalText {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -846,8 +857,6 @@ const WrapperSt = styled.section`
       }
 
       .normalText {
-        font-size: 16px;
-
         top: calc(5% + 54px);
       }
 
@@ -869,6 +878,10 @@ const WrapperSt = styled.section`
 
         .textWrap {
           gap: 14px;
+
+          .titleL {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -887,13 +900,13 @@ const WrapperSt = styled.section`
       }
 
       .fadeUp:nth-child(4) {
-        max-width: 30%;
+        max-width: 20%;
 
         bottom: -5%;
       }
 
       .fadeUp:nth-child(5) {
-        max-width: 30%;
+        max-width: 20%;
 
         bottom: 4%;
       }
@@ -928,6 +941,8 @@ const WrapperSt = styled.section`
           gap: 20px;
 
           .textWrapContainer {
+            gap: 8px;
+
             img {
               width: 30px;
             }

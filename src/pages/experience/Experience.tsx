@@ -10,6 +10,7 @@ import Blog from '@pages/experience/Blog';
 import MaxWidthContainer from '@components/MaxWidthContainer';
 import ClosePortfolioViewBtn from '@components/ClosePortfolioViewBtn';
 import { setHeaderVisibility } from '@lib/utils';
+import ScrollActiveEl from '@components/ScrollActiveEl';
 
 type ExperienceListData = {
   animationPosition: 'left' | 'top' | 'right';
@@ -103,8 +104,10 @@ export default function Experience() {
                   </Link>
                   <Link to={`/experience?name=${link}`}>
                     <div className="experienceItemInfoText">
-                      <h3 className="title">{title}</h3>
-                      <span className="normalText">{description}</span>
+                      <ScrollActiveEl className="fadeIn">
+                        <h3 className="title">{title}</h3>
+                        <span className="normalText">{description}</span>
+                      </ScrollActiveEl>
                     </div>
                   </Link>
                 </ExperienceItemSt>
@@ -155,9 +158,14 @@ const ExperienceListSt = styled.ul`
     }`;
   })}
 
+  ${media.medium`
+    flex-direction: column;
+    gap: 80px;
+  `}
+
   ${media.small`
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
   `}
 `;
 const ExperienceItemSt = styled.li`
@@ -213,11 +221,19 @@ const ExperienceItemSt = styled.li`
   }
 
   .experienceItemInfoText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    .fadeIn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      transition-delay: 0.3s;
+
+      .normalText {
+        font-size: 18px;
+      }
+    }
   }
 
   ${media.large`
@@ -235,16 +251,28 @@ const ExperienceItemSt = styled.li`
   `}
 
   ${media.medium`
+    gap: 20px;
+
+    width: 50%;
+    margin: 0 auto;
+
     .experienceItemInfoCover {
       display: none;
     }
 
     .experienceItemInfoText {
       display: flex;
+      justify-content: center;
+
+      .fadeIn {
+        gap: 4px;
+      }
     }
   `}
 
   ${media.small`
+    gap: 14px;
+
     width: 80%;
     margin: 0 auto;
   `}
@@ -270,4 +298,11 @@ const PortfolioViewWrapSt = styled.div`
     top: 50px;
     z-index: 5;
   }
+
+  ${media.small`
+    #closePortfolioViewBtn {
+      right: 24px;
+      top: 24px;
+    }
+  `}
 `;

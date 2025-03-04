@@ -6,19 +6,23 @@ const PUBLIC_DIR = import.meta.env.VITE_PUBLIC_DIR;
 
 export default function Contact() {
   return (
-    <MaxWidthContainer style={{ paddingTop: '140px' }} className="scroll">
+    <MaxWidthContainer style={{ padding: '140px 0' }} className="scroll">
       <WrapperSt>
         <h2 className="blind">연락처 페이지</h2>
-        <img src={`${PUBLIC_DIR}images/profile.jpg`} alt="프로필이미지" />
+        <img src={`${PUBLIC_DIR}images/full_profile.jpg`} alt="프로필이미지" />
         <div className="textWrap">
-          <span className="subTitle">Name: Kim Dong Hwan</span>
-          <span className="subTitle">Phone: 010-8737-9411</span>
-          <span className="subTitle">Email: hwan970104@gmail.com</span>
-          <a href="https://github.com/gabdong" target="_blank">
-            <span className="subTitle">Github</span>
+          <span className="titleXL">Kim Dong Hwan</span>
+          <span className="title">Phone: 010-8737-9411</span>
+          <span className="title">Mail: hwan970104@gmail.com</span>
+          <a
+            href="https://github.com/gabdong"
+            target="_blank"
+            style={{ marginTop: '20px' }}
+          >
+            <span className="normalText">Github</span>
           </a>
           <a href="https://gabdong.com" target="_blank">
-            <span className="subTitle">Blog</span>
+            <span className="normalText">Blog</span>
           </a>
         </div>
       </WrapperSt>
@@ -48,14 +52,34 @@ const WrapperSt = styled.section`
     align-items: end;
     justify-content: end;
     flex: 1;
+
+    a {
+      border: 1px solid var(--primary-color);
+      padding: 4px 16px;
+      border-radius: 18px;
+
+      span {
+        color: var(--primary-color);
+      }
+    }
   }
 
-  ${media.small`
+  ${media.medium`
     flex-direction: column;
 
     img {
-      max-width: 90%;
+      max-width: 50%;
       margin: 0 auto;
+    }
+
+    .textWrap {
+      align-items: center;
+    }
+  `}
+
+  ${media.small`
+    img {
+      max-width: 80%;
     }
   `}
 `;

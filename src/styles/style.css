@@ -331,13 +331,22 @@ input::placeholder {
 /* Tablet */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .titleXL {
-    font-size: 52px;
+    font-size: 58px;
+    font-weight: 600;
   }
   .titleL {
     font-size: 42px;
+    font-weight: 600;
   }
   .title {
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .subTitle {
+    font-weight: 500;
+  }
+  .normalText {
+    font-weight: 300;
   }
 }
 
@@ -345,12 +354,15 @@ input::placeholder {
 @media only screen and (max-width: 767px) {
   .titleXL {
     font-size: 32px;
+    font-weight: 600;
   }
   .titleL {
     font-size: 28px;
+    font-weight: 600;
   }
   .title {
     font-size: 20px;
+    font-weight: 600;
   }
 }
 

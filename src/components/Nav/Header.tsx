@@ -70,7 +70,7 @@ const HeaderContainerSt = styled.div`
   position: relative;
 `;
 const LogoSt = styled.div`
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   background: linear-gradient(
     to right,
@@ -84,7 +84,7 @@ const LogoSt = styled.div`
   animation: textclip 1.5s linear infinite;
 
   ${media.small`
-    font-size: 16px;
+    font-size: 21px;
   `}
 `;
 const CurrentPageTitleSt = styled.h2`
