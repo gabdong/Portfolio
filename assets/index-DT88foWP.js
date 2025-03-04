@@ -64,7 +64,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
   ${Ae.medium`
     max-width: 90%;
   `}
-`,x0="/Portfolio/";function y0(){return s.jsx(Zl,{style:{padding:"140px 0"},className:"scroll",children:s.jsxs(v0,{children:[s.jsx("h2",{className:"blind",children:"연락처 페이지"}),s.jsx("img",{src:`${x0}images/full_profile.jpg`,alt:"프로필이미지"}),s.jsxs("div",{className:"textWrap",children:[s.jsx("span",{className:"titleXL",children:"Kim Dong Hwan"}),s.jsx("span",{className:"title",children:"Phone: 010-8737-9411"}),s.jsx("span",{className:"title",children:"Mail: hwan970104@gmail.com"}),s.jsx("a",{href:"https://github.com/gabdong",target:"_blank",style:{marginTop:"20px"},children:s.jsx("span",{className:"normalText",children:"Github"})}),s.jsx("a",{href:"https://gabdong.com",target:"_blank",children:s.jsx("span",{className:"normalText",children:"Blog"})})]})]})})}const v0=ye.section`
+`,x0="/Portfolio/";function y0(){return s.jsx(Zl,{style:{padding:"140px 0"},className:"scroll",children:s.jsxs(v0,{children:[s.jsx("h2",{className:"blind",children:"연락처 페이지"}),s.jsx("img",{src:`${x0}images/full_profile.jpeg`,alt:"프로필이미지"}),s.jsxs("div",{className:"textWrap",children:[s.jsx("span",{className:"titleXL",children:"Kim Dong Hwan"}),s.jsx("span",{className:"title",children:"Phone: 010-8737-9411"}),s.jsx("span",{className:"title",children:"Mail: hwan970104@gmail.com"}),s.jsx("a",{href:"https://github.com/gabdong",target:"_blank",style:{marginTop:"20px"},children:s.jsx("span",{className:"normalText",children:"Github"})}),s.jsx("a",{href:"https://gabdong.com",target:"_blank",children:s.jsx("span",{className:"normalText",children:"Blog"})})]})]})})}const v0=ye.section`
   display: flex;
   gap: 40px;
 
