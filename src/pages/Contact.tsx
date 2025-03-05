@@ -9,20 +9,30 @@ export default function Contact() {
     <MaxWidthContainer style={{ padding: '140px 0' }} className="scroll">
       <WrapperSt>
         <h2 className="blind">연락처 페이지</h2>
-        <img src={`${PUBLIC_DIR}images/full_profile.jpg`} alt="프로필이미지" />
+        <img src={`${PUBLIC_DIR}images/full_profile.jpeg`} alt="프로필이미지" />
         <div className="textWrap">
           <span className="titleXL">Kim Dong Hwan</span>
-          <span className="title">Phone: 010-8737-9411</span>
-          <span className="title">Mail: hwan970104@gmail.com</span>
+          <span className="subTitle">Phone: 010-8737-9411</span>
+          <span className="subTitle">Mail: hwan970104@gmail.com</span>
           <a
             href="https://github.com/gabdong"
             target="_blank"
             style={{ marginTop: '20px' }}
           >
-            <span className="normalText">Github</span>
+            <span
+              className="normalText"
+              style={{ marginBottom: '2px', display: 'inline-block' }}
+            >
+              Github
+            </span>
           </a>
           <a href="https://gabdong.com" target="_blank">
-            <span className="normalText">Blog</span>
+            <span
+              className="normalText"
+              style={{ marginBottom: '2px', display: 'inline-block' }}
+            >
+              Blog
+            </span>
           </a>
         </div>
       </WrapperSt>
